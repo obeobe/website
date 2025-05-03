@@ -265,12 +265,12 @@ complete the following instructions:
    ```
 
 6. Now, run `flutter pub get` or `flutter run` and codegen takes place automatically.
-   You should find generated files in the directory at the path you specified
-   with the `arb-dir` or `output-dir` options.
+   You should find the generated files in the directory at the path you specified
+   with the the `output-dir` option, or in `.dart_tool/flutter_gen/gen_l10n`.
    Alternatively, you can also run `flutter gen-l10n` to
    generate the same files without running the app.
 
-7. Add the import statement on `app_localizations.dart` and
+8. Add the import statement on `app_localizations.dart` and
    `AppLocalizations.delegate`
    in your call to the constructor for `MaterialApp`:
 
@@ -310,7 +310,7 @@ complete the following instructions:
    );
    ```
 
-8. Once the Material app has started,
+9. Once the Material app has started,
    you can use `AppLocalizations` anywhere in your app:
 
    <?code-excerpt "gen_l10n_example/lib/main.dart (internationalized-title)"?>
